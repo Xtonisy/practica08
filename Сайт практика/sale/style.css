@@ -1,0 +1,287 @@
+body{
+    background: rgba(157, 203, 228, 0.2);
+    font-family: 'Balsamiq Sans', cursive;
+}
+header{
+    height: 155px;
+    width: 1440px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.header{
+    height: 155px;
+    width: 1440px;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo-content{
+    display: flex;
+    flex-direction:row;
+    justify-content: flex-start;
+}
+.content1{
+    display: flex;
+    flex-direction:column;
+    align-items: baseline; 
+}
+.header-contact{
+    display: flex;
+    flex-direction:row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.images{
+    width:58px;
+    margin-right: 10px;
+}
+.search-div{
+    height: 54px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#burgermenu{
+    display: none;
+    cursor: pointer;
+}
+.search{
+    margin-top: 30px;
+    width:340px;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: center;
+}
+.search-button{
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin-right: 5px;
+}
+.search-input{
+    background: rgba(157, 203, 228, 0.2);
+    border: 2px solid #000000;
+    box-sizing: border-box;
+    border-radius: 70px;
+    width: 303px;
+    height: 32px;
+}
+
+.menu-button{
+    font-size: 32px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.main{
+    margin:auto;
+    width: 1440px;
+}
+.back-form{
+    display: flex;
+    flex-direction: column;
+    background: #33393D;
+    padding: 60px;
+    font-size: 16px;
+    color: #FFFFFF
+}
+.back-form input{
+    width: 500px;
+}
+.back-form textarea{
+    width: 500px;
+    height: 200px;
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+}
+.form-button{
+    font-size: 24px;
+    height: 76px;
+    background: #C4C4C4;
+    transition: 2s  ;
+}
+textarea{
+    resize: none;
+}
+.form-button:hover{
+    color: white;
+    background: #1A4968;
+    border: solid #1A4968;
+}
+.box2{
+    background: #33393D;
+    width: 1440px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+.footer-up{
+    width: 1440px;
+    margin: auto;
+    background: #107DAD;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+}
+.footer-text{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 24px;
+    color: white;
+}
+.footer-text p{
+    width: 390px;
+    margin-left: 20px;
+}
+.footer-icons{
+    display: flex;
+    flex-direction: row;
+    margin-right: 30px;
+}
+.footer-icons img{
+    transition: 2s;
+}
+.footer-icons img:hover{
+    transform: rotate(15deg);
+}
+.footer-end{
+    width: 1440px;
+    background: #0A6289;
+    font-size: 48px;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+@media all and (max-device-width: 800px){
+.header{
+    width: 800px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+header{
+    width: auto;
+    
+}
+.content1{
+    display: none;
+}
+.content2{
+    display: none;
+}
+#burgermenu{
+    display: block;
+}
+nav{
+    display: none;
+    justify-content: right;
+    flex-direction: column;
+    max-width: 350px;
+    flex-wrap: wrap;
+    position: fixed;
+    top:10%;
+    right:0;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+.main{
+    width: auto;
+}
+.box2{
+    width: auto;
+}
+.footer-up{
+    width: auto;
+}
+.footer-text p{
+    width: auto;
+    margin-left: 20px;
+}
+.footer-end{
+    width: auto;
+}
+}
+
+@media all and (max-device-width: 600px){
+    .header{
+        width: 600px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    .logo{
+        display:none;
+    }
+    header{
+        width: auto;
+        
+    }
+    .content1{
+        display: none;
+    }
+    .content2{
+        display: none;
+    }
+    .search{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .search-input{
+        display: none;
+    }
+    #burgermenu{
+        display: block;
+    }
+    nav{
+        display: none;
+    }
+    .main{
+        width: 600px;
+    }
+
+    .box2{
+        width: auto;
+    }
+    .footer-logo{
+       display: none;
+    }
+    .footer-up{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+    }
+    .footer-icons{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-text p{
+        width: auto;
+        margin-left: 20px;
+    }
+    .footer-end{
+        width: auto;
+    }
+    }
